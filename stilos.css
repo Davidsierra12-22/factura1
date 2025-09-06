@@ -1,0 +1,424 @@
+body {
+    margin: 0;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 900px;
+    width: 90%;
+    margin: 40px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-left: 47px #48D1CC solid;
+    box-sizing: border-box;
+
+
+}
+
+.invoice-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detalles {
+    margin-right: 80px;
+    margin-top: 50px;
+}
+
+.detalles h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    color: #48D1CC;
+}
+.detalles h3{
+    text-align: center;
+    margin: 5px;
+    margin-right: 120px;
+    font-size: 16px;
+    color: #48D1CC;
+}
+.detalles p {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #48D1CC;
+}
+
+.detalles span {
+    font-weight: bold;
+    color: initial
+}
+.detallesempresa{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    justify-items: center;
+
+
+}
+
+.cliente {
+    margin-right: 150px;
+    
+
+}
+
+.cliente h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 80px;
+    font-size: 40px;
+    color: #48D1CC;
+}
+
+.cliente p {
+    text-align: left;
+    font-size: 16px;
+    color: black;
+    padding: 2px;
+    margin: 0;
+}
+
+.metodo-pago {
+    justify-content: flex-start;
+    margin-right: 56px;
+    margin-top: 28px;
+}
+
+.metodo-pago h2 {
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+    font-size: 20px;
+    color: #48D1CC;
+}
+
+.metodo-pago p {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    color: #48D1CC;
+    padding: 1px;
+    margin: 0;
+}
+
+.metodo-pago span {
+    font-weight: bold;
+    color: initial;
+}
+
+.tabla {
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.articulo-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr .5fr;
+    background-color: #48D1CC;
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+
+}
+
+.header-item {
+    text-align: left;
+}
+
+.articulo-header .articulo-header:nth-child(2) .articulo-header .articulo-header:nth-child(3) .articulo-header .articulo-header:nth-child(4) {
+    text-align: right;
+}
+
+.articulo {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr .5fr;
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    color: initial;
+    font-size: 0.9em;
+}
+
+.articulo:nth-child(even) {
+    background-color: white;
+}
+
+.articulo:nth-child(odd) {
+    background-color: silver;
+}
+
+.articulo-item {
+    text-align: left;
+    padding-right: 10px;
+}
+
+.art-detalles {
+    text-align: right;
+}
+
+.articulo:last-child {
+    border-bottom: none;
+}
+
+.cajondetalles {
+    display: flex;
+    margin-left: auto;
+    margin-right: 240px;
+     position: sticky;
+    top: 0; /* Se pegará en la parte superior de la ventana cuando la alcance */
+    z-index: 100; /* Asegura que el elemento sticky esté sobre los demás */
+    padding: 10px;
+}
+
+.detalles2 {
+    padding-right: 40%;
+    padding-left: 70%;
+
+}
+
+.detalles2 p {
+    margin-top: 7px;
+    margin-bottom: 0;
+}
+
+.detalles3 {
+    margin-left: 80px;
+
+}
+
+.detalles3 p {
+    margin-top: 12px;
+    margin-bottom: 0;
+
+}
+
+.cajonpiedepagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 75px;
+
+
+
+}
+
+.detalles4 {
+    margin: 0px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+
+}
+.detalles4 p{
+    margin:3px;
+}
+
+.detalles5 {
+    color: #48D1CC;
+    font-size: 22px;
+    margin-left: 200px;
+}
+
+.linea {
+    border-top: 5px silver solid;
+    margin-top: 3px;
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.lineas2 {
+    border-top: 5px #48D1CC solid;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.piedepagina {
+    text-align: center;
+
+
+}
+
+@media(max-width: 800px){
+    .detalles4{margin-left:0px;
+        justify-content: flex-start;
+}
+.contenedor{
+    width: 100%;
+}
+ .detalles2{
+    padding: 0px;
+ }
+ .cajondetalles{
+       margin-right: 30px;
+ }
+ .cajonpiedepagina{
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .detallesempresa{
+  grid-template-columns: 1fr;
+  justify-content: center;
+ }
+ .cliente{
+    margin-right: 0px;
+ }
+ .detalles5{
+    margin-left: 0px;
+    justify-content: center;
+ }
+ .metodo-pago h2{
+    margin-top: 30px;
+ }
+ .cliente h2{
+    margin-top: 35px;
+ }
+}
+@media(max-width: 650px) {
+    .contenedor{
+        border-left: 0px;
+    }
+    
+    
+}
+@media(max-width: 605px) {
+   .cajonpiedepagina{
+    margin-top: 40px;
+   }
+    
+}
+@media(max-width: 550px){
+    .detalles5{
+        margin-left:0px;
+    }
+    .detalles{
+        width: 60%;
+        max-width: 50%;
+        margin-right: 0px;
+    }
+    .detalles h2{
+        font-size: 30px;
+    }
+    .detalles h3{
+        margin-right: 0px;
+    }
+    .logo{
+        width: 80%;
+        max-width:80% ;
+    }
+     .detalles3{
+        margin-left: 30px;
+     }
+        .tabla{
+        padding: 0px;
+    }
+    .articulo{
+        padding:12px 12px ;
+    }
+    .articulo-header{
+        padding: 15px 12px;
+        padding-left: 20px;
+    }
+    .cajondetalles{
+    margin-right: 0;
+}
+
+}
+
+@media(max-width: 400px) {
+
+.detalles2 p{
+    margin-top: 12px;
+}
+    .detalles h2{
+        font-size: 25px;
+    }
+
+    .header-item{
+        padding-right: 5px;
+    }
+    .detalles5{
+        font-size: 18px;
+        justify-self:flex-start;
+    }
+    .cajonpiedepagina{
+        margin-left: 34px;
+    }
+}
+@media(max-width: 340px){
+  .metodo-pago{
+    margin-right: 0px;
+
+  }
+  .articulo-header{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .articulo{
+        padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cliente h2{
+    font-size:33px ;
+  }
+  .cajondetalles{
+    padding-right: 0px;
+  }
+
+}
+@media(max-width: 325px){
+    .header-item{
+        padding-right: 2px;
+        font-size:13px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding-left: 20px;
+}
+    
+    .cliente p{
+        font-size:14px ;
+    }
+    .metodo-pago p{
+        font-size: 14px;
+    }
+    .detalles3{
+        margin-left:5px ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
